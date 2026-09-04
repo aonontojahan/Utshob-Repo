@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bahalul Hossain Chowdhury | Software Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Bahalul Hossain Chowdhury (Utshob) - Software Engineer & Full-Stack Developer specializing in FastAPI, Django, React, Next.js, WebSockets, and database systems.">
+  <meta name="keywords" content="Bahalul Hossain Chowdhury, Utshob, Software Engineer, Full Stack Developer, FastAPI, React, Next.js, WebSockets, Escrow Marketplace, Bangladesh Engineer">
+  <meta name="author" content="Bahalul Hossain Chowdhury">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Bahalul Hossain Chowdhury | Software Engineer Portfolio">
+  <meta property="og:description" content="Computer Science graduate with expertise in full-stack web development, real-time systems, and scalable backend architecture.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aonontojahan.vercel.app/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Orbs Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <span class="logo-tag">&lt;</span>Bahalul<span class="logo-tag">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-secondary btn-icon-only" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-outline" id="btn-open-terminal">
+          <i class="fa-solid fa-terminal"></i> Terminal CLI
+        </button>
+        <button class="btn btn-primary" id="btn-open-latex">
+          <i class="fa-solid fa-file-code"></i> LaTeX Resume
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span> Open for Software Engineering Roles
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Bahalul Hossain</span> Chowdhury
+          </h1>
+
+          <div class="hero-subtitle">
+            <span class="typing-effect" id="typing-text">Software Engineer & Full-Stack Developer</span>
+          </div>
+
+          <p class="hero-description">
+            Computer Science graduate specializing in building scalable full-stack applications, real-time WebSocket platforms, escrow marketplaces, and high-performance REST APIs.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> Explore Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-solid fa-envelope"></i> Get In Touch
+            </a>
+            <a href="https://github.com/aonontojahan" target="_blank" rel="noopener" class="btn btn-outline">
+              <i class="fa-brands fa-github"></i> GitHub Profile
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/aonontojahan/" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/aonontojahan" target="_blank" rel="noopener" class="social-link" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://aonontojahan.vercel.app/" target="_blank" rel="noopener" class="social-link" title="Portfolio">
+              <i class="fa-solid fa-globe"></i>
+            </a>
+            <a href="mailto:utshobchowdhury35@gmail.com" class="social-link" title="Email Direct">
+              <i class="fa-solid fa-paper-plane"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Avatar & Floating Badges -->
+        <div class="hero-profile-card">
+          <div class="avatar-wrapper glass-card">
+            <img src="assets/images/avatar.jpg" alt="Bahalul Hossain Chowdhury" class="avatar-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80'">
+          </div>
+
+          <div class="floating-badge badge-top-right">
+            <div class="badge-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="badge-text">
+              <strong>Product Engineer</strong>
+              <span>3S Software Ltd.</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-left">
+            <div class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="badge-text">
+              <strong>B.Sc in CSE</strong>
+              <span>CGPA 3.10 • IUBAT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="stats-grid">
+        <div class="stat-card glass-card">
+          <div class="stat-number">4<span>+</span></div>
+          <div class="stat-label">Full-Stack Projects</div>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-number">2<span>+</span></div>
+          <div class="stat-label">Industry Roles</div>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-number">2<span>x</span></div>
+          <div class="stat-label">Meta & MS Certified</div>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-number">5.00</div>
+          <div class="stat-label">HSC & SSC GPA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-user"></i> About Me</span>
+        <h2 class="section-title">Driven by <span class="gradient-text">Code Quality</span> & Architecture</h2>
+        <p class="section-subtitle">A quick overview of my background and software engineering philosophy.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a Computer Science and Engineering graduate with practical experience in full-stack software development and a strong grounding in data structures, algorithms, and software design principles.
+          </p>
+          <p>
+            Throughout my engineering journey, I've designed escrow payment transaction engines, built real-time WebSocket messaging platforms, and delivered database-backed RESTful APIs using <strong>FastAPI, Django, React, and Next.js</strong>.
+          </p>
+          <p>
+            Having served as a <strong>Product Engineer at 3S Software Limited</strong> and <strong>Junior Executive at SkyTech</strong>, I understand how to bridge technical solutions with product goals, delivering maintainable, clean code.
+          </p>
+        </div>
+
+        <div class="highlights-grid">
+          <div class="highlight-card glass-card">
+            <div class="highlight-icon"><i class="fa-solid fa-cubes"></i></div>
+            <h3 class="highlight-title">Full-Stack Development</h3>
+            <p class="highlight-desc">Building end-to-end applications with modern frontend frameworks and robust backend microservices.</p>
+          </div>
+          <div class="highlight-card glass-card">
+            <div class="highlight-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3 class="highlight-title">Real-Time & WebSockets</h3>
+            <p class="highlight-desc">Architecting live chat, typing indicators, and instant bid negotiation systems.</p>
+          </div>
+          <div class="highlight-card glass-card">
+            <div class="highlight-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="highlight-title">Escrow & Transaction Logic</h3>
+            <p class="highlight-desc">Implementing buyer inspection windows and secure release mechanisms for web transactions.</p>
+          </div>
+          <div class="highlight-card glass-card">
+            <div class="highlight-icon"><i class="fa-solid fa-code"></i></div>
+            <h3 class="highlight-title">Clean Code & APIs</h3>
+            <p class="highlight-desc">Adhering to SOLID principles, REST API best practices, and automated testing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Matrix -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Technical Stack</span>
+        <h2 class="section-title">Languages, Frameworks & <span class="gradient-text">Tools</span></h2>
+        <p class="section-subtitle">Search or filter through my technical stack.</p>
+      </div>
+
+      <div class="skills-controls">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="skill-search-input" class="search-input" placeholder="Search skills (e.g. FastAPI, Python, React, WebSockets)...">
+        </div>
+
+        <div class="filter-pills" id="skill-filter-pills">
+          <button class="filter-pill active" data-filter="all">All</button>
+          <button class="filter-pill" data-filter="languages">Languages</button>
+          <button class="filter-pill" data-filter="backend">Backend</button>
+          <button class="filter-pill" data-filter="frontend">Frontend</button>
+          <button class="filter-pill" data-filter="database">Databases</button>
+          <button class="filter-pill" data-filter="tools">Tools & Others</button>
+        </div>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <!-- Languages -->
+        <div class="skill-category-card glass-card" data-category="languages">
+          <div class="category-header">
+            <i class="fa-solid fa-code category-icon"></i>
+            <h3 class="category-title">Programming Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-tag"><i class="fa-solid fa-c"></i> C++</span>
+            <span class="skill-tag"><i class="fa-solid fa-code"></i> C</span>
+            <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
+            <span class="skill-tag"><i class="fa-solid fa-hashtag"></i> C#</span>
+            <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category-card glass-card" data-category="backend">
+          <div class="category-header">
+            <i class="fa-solid fa-server category-icon"></i>
+            <h3 class="category-title">Backend Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+            <span class="skill-tag"><i class="fa-brands fa-python"></i> Django</span>
+            <span class="skill-tag"><i class="fa-solid fa-plug"></i> REST APIs</span>
+            <span class="skill-tag"><i class="fa-solid fa-key"></i> JWT Auth</span>
+            <span class="skill-tag"><i class="fa-solid fa-comments"></i> WebSockets</span>
+            <span class="skill-tag"><i class="fa-solid fa-diagram-project"></i> SQLAlchemy</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category-card glass-card" data-category="frontend">
+          <div class="category-header">
+            <i class="fa-solid fa-desktop category-icon"></i>
+            <h3 class="category-title">Frontend Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-brands fa-react"></i> React</span>
+            <span class="skill-tag"><i class="fa-solid fa-N"></i> Next.js</span>
+            <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="skill-tag"><i class="fa-solid fa-wind"></i> Tailwind CSS</span>
+            <span class="skill-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> shadcn/ui</span>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category-card glass-card" data-category="database">
+          <div class="category-header">
+            <i class="fa-solid fa-database category-icon"></i>
+            <h3 class="category-title">Databases & Storage</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+            <span class="skill-tag"><i class="fa-solid fa-database"></i> MSSQL</span>
+            <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</span>
+          </div>
+        </div>
+
+        <!-- Tools & DevOps -->
+        <div class="skill-category-card glass-card" data-category="tools">
+          <div class="category-header">
+            <i class="fa-solid fa-toolbox category-icon"></i>
+            <h3 class="category-title">Tools & Workflows</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="skill-tag"><i class="fa-solid fa-code"></i> VS Code</span>
+            <span class="skill-tag"><i class="fa-solid fa-server"></i> XAMPP</span>
+          </div>
+        </div>
+
+        <!-- Design & Productivity -->
+        <div class="skill-category-card glass-card" data-category="tools">
+          <div class="category-header">
+            <i class="fa-solid fa-pen-ruler category-icon"></i>
+            <h3 class="category-title">Productivity & Design</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+            <span class="skill-tag"><i class="fa-solid fa-palette"></i> Canva</span>
+            <span class="skill-tag"><i class="fa-solid fa-file-word"></i> MS Office Suite</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Timeline -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-timeline"></i> Journey</span>
+        <h2 class="section-title">Work Experience & <span class="gradient-text">Education</span></h2>
+        <p class="section-subtitle">My professional industry roles and academic milestones.</p>
+      </div>
+
+      <div class="timeline-tabs">
+        <button class="timeline-tab active" id="tab-experience" data-target="experience-content">
+          <i class="fa-solid fa-briefcase"></i> Work Experience
+        </button>
+        <button class="timeline-tab" id="tab-education" data-target="education-content">
+          <i class="fa-solid fa-graduation-cap"></i> Academic Education
+        </button>
+      </div>
+
+      <!-- Experience Content -->
+      <div class="timeline-container" id="experience-content">
+        <!-- Role 1 -->
+        <div class="timeline-item">
+          <div class="timeline-node"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Product Engineer</h3>
+                <div class="timeline-company">Product Team • 3S Software Limited</div>
+              </div>
+              <span class="timeline-date">Nov 2025 – May 2026</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Collaborated within the core product development team to engineer scalable software solutions.</li>
+              <li>Participated in system design architecture, API integration, and full-stack feature development.</li>
+              <li>Employed clean code practices, code reviews, and testing to ensure software reliability.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Role 2 -->
+        <div class="timeline-item">
+          <div class="timeline-node"><i class="fa-solid fa-user-gear"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Junior Executive</h3>
+                <div class="timeline-company">SkyTech</div>
+              </div>
+              <span class="timeline-date">Jun 2026 – Aug 2026</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Contributed to executive technical workflows, operational optimization, and client solution deliverables.</li>
+              <li>Collaborated across technical and management teams to streamline product delivery.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Content -->
+      <div class="timeline-container" id="education-content" style="display: none;">
+        <!-- Degree 1 -->
+        <div class="timeline-item">
+          <div class="timeline-node"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">B.Sc. in Computer Science & Engineering</h3>
+                <div class="timeline-company">IUBAT - International University of Business Agriculture and Technology</div>
+              </div>
+              <span class="timeline-date">2022 – 2026</span>
+            </div>
+            <span class="grade-badge"><i class="fa-solid fa-award"></i> CGPA: 3.10</span>
+            <ul class="timeline-details" style="margin-top: 0.75rem;">
+              <li>Focused coursework in Data Structures, Algorithms, Database Management Systems, Software Engineering, and Web Technologies.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Degree 2 -->
+        <div class="timeline-item">
+          <div class="timeline-node"><i class="fa-solid fa-school"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Higher Secondary Certificate (HSC)</h3>
+                <div class="timeline-company">Gazipur Metropolitan College, Gazipur</div>
+              </div>
+              <span class="timeline-date">2018 – 2020</span>
+            </div>
+            <span class="grade-badge"><i class="fa-solid fa-star"></i> GPA: 5.00</span>
+          </div>
+        </div>
+
+        <!-- Degree 3 -->
+        <div class="timeline-item">
+          <div class="timeline-node"><i class="fa-solid fa-award"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Secondary School Certificate (SSC)</h3>
+                <div class="timeline-company">Rani Bilash Moni Govt. Boys High School, Gazipur</div>
+              </div>
+              <span class="timeline-date">2017 – 2018</span>
+            </div>
+            <span class="grade-badge"><i class="fa-solid fa-star"></i> GPA: 5.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-code-fork"></i> Portfolio</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Real-world applications built with FastAPI, WebSockets, Next.js, and PostgreSQL.</p>
+      </div>
+
+      <div class="projects-filter" id="project-filter-pills">
+        <button class="filter-pill active" data-project-filter="all">All Projects</button>
+        <button class="filter-pill" data-project-filter="fullstack">Full-Stack</button>
+        <button class="filter-pill" data-project-filter="realtime">Real-Time / WebSockets</button>
+        <button class="filter-pill" data-project-filter="escrow">Escrow & E-Commerce</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: ReSale -->
+        <div class="project-card glass-card" data-category="escrow fullstack">
+          <div class="project-image-wrapper">
+            <img src="assets/images/resale_marketplace.jpg" alt="ReSale Electronics Marketplace" class="project-image" onerror="this.src='https://images.unsplash.com/photo-1556742049-0a67daf4005a?auto=format&fit=crop&w=800&q=80'">
+            <span class="project-badge">Escrow Protected</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">ReSale — Premium Electronics Marketplace</h3>
+            <div class="project-tech-stack">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+            <ul class="project-bullets">
+              <li>Built an escrow-protected marketplace with a 72-hour buyer inspection window before releasing seller funds.</li>
+              <li>Designed a real-time negotiation system for buyers to make instant offers and sellers to accept or decline.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/aonontojahan/Resale-Marketplace-for-Electronics-Devices" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">
+                <i class="fa-brands fa-github"></i> View GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: ChatApp -->
+        <div class="project-card glass-card" data-category="realtime fullstack">
+          <div class="project-image-wrapper">
+            <img src="assets/images/chatapp.jpg" alt="Realtime Chat Application" class="project-image" onerror="this.src='https://images.unsplash.com/photo-1611746872915-64382b5c76da?auto=format&fit=crop&w=800&q=80'">
+            <span class="project-badge">WebSockets Live</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">ChatApp — Realtime Messaging Platform</h3>
+            <div class="project-tech-stack">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">WebSockets</span>
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">shadcn/ui</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+            <ul class="project-bullets">
+              <li>Built a Slack-like real-time chat application with JWT authentication, public channels, and private direct messaging.</li>
+              <li>Implemented live message delivery, typing indicators, and online/offline status presence over WebSockets.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/aonontojahan/realtime-chat-app" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">
+                <i class="fa-brands fa-github"></i> View GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: EMS -->
+        <div class="project-card glass-card" data-category="fullstack">
+          <div class="project-image-wrapper">
+            <img src="assets/images/ems.jpg" alt="EMS Event Management System" class="project-image" onerror="this.src='https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80'">
+            <span class="project-badge">Database System</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">EMS — Event Management System</h3>
+            <div class="project-tech-stack">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">XAMPP</span>
+              <span class="tech-tag">HTML5/CSS3</span>
+            </div>
+            <ul class="project-bullets">
+              <li>Built a web platform for seamless event creation and participant online registration.</li>
+              <li>Designed a database-driven system to manage event listings, attendee records, and registration statuses.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/aonontojahan/Event-Management-System" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">
+                <i class="fa-brands fa-github"></i> View GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: CALC -->
+        <div class="project-card glass-card" data-category="fullstack">
+          <div class="project-image-wrapper">
+            <img src="assets/images/calc.jpg" alt="CALC Smart Scientific Calculator" class="project-image" onerror="this.src='https://images.unsplash.com/photo-1587145820266-a5951ee6f620?auto=format&fit=crop&w=800&q=80'">
+            <span class="project-badge">Full-Stack App</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">CALC — Smart Scientific Calculator</h3>
+            <div class="project-tech-stack">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">React (Vite)</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+            <ul class="project-bullets">
+              <li>Developed a full-stack scientific calculator supporting complex mathematical expressions and operations.</li>
+              <li>Implemented user authentication and persistent calculation history logging using PostgreSQL.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/aonontojahan/Smart-Calculator" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">
+                <i class="fa-brands fa-github"></i> View GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="certs-section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-certificate"></i> Verified Credentials</span>
+        <h2 class="section-title">Certifications & <span class="gradient-text">Learning</span></h2>
+        <p class="section-subtitle">Professional technical certifications completed.</p>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card glass-card">
+          <div class="cert-badge-icon"><i class="fa-brands fa-meta"></i></div>
+          <div class="cert-info">
+            <h3>Meta Front-End Developer</h3>
+            <div class="cert-issuer">Issued by Shikhbe Shobai</div>
+            <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Verified Completed</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card">
+          <div class="cert-badge-icon"><i class="fa-brands fa-microsoft"></i></div>
+          <div class="cert-info">
+            <h3>Microsoft Python Development</h3>
+            <div class="cert-issuer">Issued by Coursera</div>
+            <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Verified Completed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+        <h2 class="section-title">Let's Build Something <span class="gradient-text">Great</span></h2>
+        <p class="section-subtitle">Feel free to reach out for software engineering opportunities or collaborations.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Details Card -->
+        <div class="contact-info-card glass-card">
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Contact Information</h3>
+
+            <div class="contact-item">
+              <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-details">
+                <label>Email Address</label>
+                <a href="mailto:utshobchowdhury35@gmail.com">utshobchowdhury35@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-details">
+                <label>Phone / WhatsApp</label>
+                <a href="tel:+8801921806099">+880 1921-806099</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-details">
+                <label>Location</label>
+                <span>Dhaka, Bangladesh</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <label style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 1rem;">Social Profiles</label>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/aonontojahan/" target="_blank" rel="noopener" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/aonontojahan" target="_blank" rel="noopener" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://aonontojahan.vercel.app/" target="_blank" rel="noopener" class="social-link" title="Portfolio"><i class="fa-solid fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card glass-card">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Sarah Connor" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" class="form-input" placeholder="e.g. sarah@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-input" placeholder="Project Opportunity / Hello" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        Designed & Developed with <span>♥</span> by <strong>Bahalul Hossain Chowdhury (Utshob)</strong> • &copy; 2026
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+    <button class="fab-btn" id="fab-terminal">
+      <i class="fa-solid fa-terminal"></i>
+      <span class="tooltip">CLI Terminal</span>
+    </button>
+    <button class="fab-btn" id="fab-latex">
+      <i class="fa-solid fa-file-code"></i>
+      <span class="tooltip">LaTeX Resume</span>
+    </button>
+  </div>
+
+  <!-- Terminal CLI Modal -->
+  <div class="modal-overlay" id="terminal-modal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="mac-controls">
+          <span class="mac-dot dot-red"></span>
+          <span class="mac-dot dot-yellow"></span>
+          <span class="mac-dot dot-green"></span>
+        </div>
+        <div class="modal-title">utshob@dev-machine:~ (zsh)</div>
+        <button class="modal-close-btn" id="close-terminal">&times;</button>
+      </div>
+      <div class="terminal-body" id="terminal-output">
+        <div class="terminal-line">Welcome to <strong style="color: #6366f1;">utshob-cli v1.0.0</strong></div>
+        <div class="terminal-line">Type <span style="color: #f59e0b;">'help'</span> to view available commands. Try <span style="color: #10b981;">'projects'</span>, <span style="color: #10b981;">'skills'</span>, or <span style="color: #10b981;">'hire'</span>.</div>
+        <div class="terminal-line">&nbsp;</div>
+      </div>
+      <div style="padding: 0.75rem 1.5rem; background: #0b0f19; border-top: 1px solid rgba(255,255,255,0.05);" class="terminal-input-line">
+        <span class="terminal-prompt">utshob@dev-machine:~$</span>
+        <input type="text" id="terminal-input" class="terminal-input" placeholder="Type a command..." autofocus>
+      </div>
+    </div>
+  </div>
+
+  <!-- LaTeX Resume Modal -->
+  <div class="modal-overlay" id="latex-modal">
+    <div class="modal-window" style="max-width: 900px;">
+      <div class="modal-header">
+        <div class="mac-controls">
+          <span class="mac-dot dot-red"></span>
+          <span class="mac-dot dot-yellow"></span>
+          <span class="mac-dot dot-green"></span>
+        </div>
+        <div class="modal-title">resume.tex — LaTeX Source Code</div>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <button class="btn btn-outline" id="btn-copy-latex" style="padding: 0.25rem 0.75rem; font-size: 0.8rem;">
+            <i class="fa-solid fa-copy"></i> Copy LaTeX
+          </button>
+          <button class="modal-close-btn" id="close-latex">&times;</button>
+        </div>
+      </div>
+      <div class="latex-body">
+        <pre class="latex-code-block" id="latex-code-content">\documentclass[10pt]{article}
+\usepackage{fix-cm}
+\usepackage[margin=0.65in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\hypersetup{colorlinks=true, urlcolor=black, linkcolor=black}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\vspace{2pt}\titlerule]
+\titlespacing{\section}{0pt}{6pt}{6pt}
+\newcommand{\skillrow}[2]{\textbf{#1} & #2 \\[2pt]}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+  {\fontsize{28}{32}\selectfont\bfseries Bahalul Hossain Chowdhury}\\[3pt]
+  {\small ASPIRING SOFTWARE ENGINEER}\\[2pt]
+  {\small Dhaka, Bangladesh \ $|$\ 
+  \small +880 1921-806099 \ $|$\ \href{mailto:utshobchowdhury35@gmail.com}{utshobchowdhury35@gmail.com}}\\[1pt]
+  {\small \href{https://www.linkedin.com/in/aonontojahan/}{LinkedIn} \ $|$\ \href{https://github.com/aonontojahan}{GitHub} \ $|$\ \href{https://aonontojahan.vercel.app/}{Portfolio}}
+\end{center}
+\vspace{-6pt}
+
+% ---------- PROFESSIONAL SUMMARY ----------
+\section*{PROFESSIONAL SUMMARY}
+Computer Science and Engineering graduate with practical experience in full-stack software development and a strong grounding in data structures, algorithms, and software design principles. Adept at building scalable and reliable applications, committed to writing clean, well-tested, and maintainable code.
+
+% ---------- EDUCATION ----------
+\section*{EDUCATION}
+\begin{tabularx}{\textwidth}{@{}l R r@{}}
+\textbf{B.Sc. in Computer Science \& Engineering} & CGPA 3.10 & 2022--2026 \\
+\multicolumn{3}{@{}l@{}}{IUBAT - International University of Business Agriculture and Technology} \\[6pt]
+\textbf{Higher Secondary Certificate (HSC)} & GPA 5.00 & 2018--2020 \\
+\multicolumn{3}{@{}l@{}}{Gazipur Metropolitan College, Gazipur} \\[6pt]
+\textbf{Secondary School Certificate (SSC)} & GPA 5.00 & 2017--2018 \\
+\multicolumn{3}{@{}l@{}}{Rani Bilash Moni Govt. Boys High School, Gazipur} \\
+\end{tabularx}
+
+% ---------- TECHNICAL SKILLS ----------
+\section*{TECHNICAL SKILLS}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\skillrow{Languages}{C, C++, Python, Java, C\#, SQL}
+\skillrow{Database}{MSSQL}
+\skillrow{Tools}{Git, GitHub, VS Code, XAMPP}
+\skillrow{Backend Development}{FastAPI, Django, REST APIs, JWT Authentication}
+\skillrow{Frontend Development}{HTML, CSS, JavaScript, React, Next.js, Tailwind CSS}
+\skillrow{Productivity \& Design}{Microsoft Word, Excel, PowerPoint, Canva, Figma}
+\end{tabularx}
+
+% ---------- PROJECTS ----------
+\section*{PROJECTS}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{ReSale --- Premium Electronics Marketplace} & \href{https://github.com/aonontojahan/Resale-Marketplace-for-Electronics-Devices}{GitHub} \\
+\end{tabularx}\\[-2pt]
+\textit{FastAPI \textbullet\ PostgreSQL \textbullet\ JavaScript \textbullet\ CSS3}
+\begin{itemize}[leftmargin=2.2em, itemsep=1pt, topsep=2pt, partopsep=0pt, parsep=0pt]
+  \item Built an escrow-protected marketplace with a 72-hour buyer inspection window before releasing funds.
+  \item Designed a real-time negotiation system for buyers to make offers and sellers to accept or decline instantly.
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{ChatApp --- Realtime Chat App} & \href{https://github.com/aonontojahan/realtime-chat-app}{GitHub} \\
+\end{tabularx}\\[-2pt]
+\textit{FastAPI \textbullet\ PostgreSQL \textbullet\ SQLAlchemy \textbullet\ WebSockets \textbullet\ Next.js \textbullet\ Tailwind CSS \textbullet\ shadcn/ui}
+\begin{itemize}[leftmargin=2.2em, itemsep=1pt, topsep=2pt, partopsep=0pt, parsep=0pt]
+  \item Built a Slack-like real-time chat application with JWT authentication, public channels, and private messaging.
+  \item Implemented live message delivery, typing indicators, and online/offline status over WebSockets.
+\end{itemize}
+
+% ---------- EXTRACURRICULAR ACTIVITIES / EXPERIENCES ----------
+\section*{EXPERIENCES}
+\begin{itemize}[leftmargin=2.2em, itemsep=1pt, topsep=2pt, partopsep=0pt, parsep=0pt]
+  \item Worked as Product Engineer, Product Team, 3S Software Limited. [November 2025-May 2026]
+  \item Worked as Junior Executive, SkyTech. [June 2026-August 2026]
+\end{itemize}
+
+% ---------- CERTIFICATIONS ----------
+\section*{CERTIFICATIONS}
+\begin{itemize}[leftmargin=2.2em, itemsep=1pt, topsep=2pt, partopsep=0pt, parsep=0pt]
+  \item Completed Meta Front-End Developer certification from Shikhbe Shobai.
+  \item Completed Microsoft Python Development certification from Coursera.
+\end{itemize}
+\end{document}</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification System Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
